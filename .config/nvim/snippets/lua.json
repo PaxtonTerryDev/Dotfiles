@@ -1,0 +1,12 @@
+{
+  "Function": {
+    "prefix": "fn",
+    "body": ["local ${1:name} = function(${2:args})", "\t$0", "end"],
+    "description": "Local function"
+  },
+  "Require": {
+    "prefix": "req",
+    "body": ["local ${1:name} = require(\"${2:module}\")"],
+    "description": "Require a module"
+  }
+}

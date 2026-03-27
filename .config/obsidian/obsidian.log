@@ -1,0 +1,21 @@
+2026-02-22 18:07:38 Loading main app package /usr/lib/obsidian/obsidian.asar
+2026-02-22 18:07:38 Checking for update using Github
+2026-02-22 18:07:39 Success.
+2026-02-22 18:07:39 Latest version is 1.11.7
+2026-02-22 18:07:39 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.11.7/obsidian-1.11.7.asar.gz
+2026-02-22 18:07:40 Verifying hash & signature. Size= 8773752
+2026-02-22 18:07:40 Saving file
+2026-02-22 18:07:40 Update complete.
+2026-03-12 00:57:24 Loaded main app package /usr/lib/obsidian/obsidian.asar
+2026-03-12 00:57:24 Checking for update using Github
+2026-03-12 00:57:25 Success.
+2026-03-12 00:57:25 Latest version is 1.12.4
+2026-03-12 00:57:25 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.4/obsidian-1.12.4.asar.gz
+2026-03-12 00:57:26 Verifying hash & signature. Size= 8322418
+2026-03-12 00:57:26 Saving file
+2026-03-12 00:57:26 Update complete.
+2026-03-12 00:57:39 Loaded updated app package /home/paxton/.config/obsidian/obsidian-1.12.4.asar
+2026-03-12 00:57:39 Checking for update using Github
+2026-03-12 00:57:39 Success.
+2026-03-12 00:57:39 Latest version is 1.12.4
+2026-03-12 00:57:39 App is up to date.

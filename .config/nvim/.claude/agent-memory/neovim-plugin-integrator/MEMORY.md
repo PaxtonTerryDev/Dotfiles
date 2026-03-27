@@ -1,0 +1,2 @@
+- [Neovim config structure and plugin manager](project_nvim_config.md) — LazyVim setup, lua/plugins/ one-file-per-concern, StyLua 2-space/120col
+- [Occupied keybindings catalog](project_keybindings.md) — full audit of taken keybindings to prevent conflicts when adding plugins
