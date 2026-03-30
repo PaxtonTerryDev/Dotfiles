@@ -7,32 +7,35 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "hide_hidden": false
+  },
   "lsp": {
     "vtsls": {
       "settings": {
         "typescript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
+            "enabled": "always",
+          },
         },
         "javascript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
-        }
+            "enabled": "always",
+          },
+        },
       },
-      "enable_lsp_tasks": true
-    }
+      "enable_lsp_tasks": true,
+    },
   },
-  "buffer_font_family": "Iosevka Nerd Font Mono",
   "git_panel": {
     "tree_view": true,
   },
-  "ui_font_family": "Iosevka Nerd Font Mono",
+  "ui_font_family": "Iosevka",
   "ui_font_size": 14,
   "ui_font_weight": 400,
+  "buffer_font_family": "Iosevka",
   "buffer_font_size": 13,
-  "buffer_font_weight": 100.0,
+  "buffer_font_weight": 200,
   "buffer_line_height": {
     "custom": 1.25,
   },
@@ -40,13 +43,13 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Gruber Darker",
+    "dark": "macOS Classic Dark",
   },
 
   "cursor_blink": false,
 
   "vim_mode": true,
-  "relative_line_numbers": "disabled",
+  "relative_line_numbers": "enabled",
   "vim": {
     "use_smartcase_find": true,
     "use_system_clipboard": "on_yank",
@@ -67,17 +70,19 @@
   },
   "indent_guides": {
     "enabled": true,
+    "coloring": "indent_aware",
   },
 
   "git": {
     "git_gutter": "tracked_files",
+    "hunk_style": "unstaged_hollow",
     "inline_blame": {
       "enabled": true,
     },
   },
 
-  // "wrap_guides": [120],
-  // "show_wrap_guides": true,
+  "wrap_guides": [120],
+  "show_wrap_guides": true,
 
   "format_on_save": "on",
 
@@ -93,4 +98,49 @@
       "base_url": "https://github.com/PaxtonTerryDev",
     },
   ],
+  "theme_overrides": {
+    "Gruber Darker": {
+      "border": "#ADADADFF",
+      "elevated_surface.background": "#000000FF",
+      "surface.background": "#000000FF",
+      "background": "#000000FF",
+      "text.accent": "#e4e4ef",
+      "status_bar.background": "#000000FF",
+      "title_bar.background": "#000000FF",
+      "toolbar.background": "#000000FF",
+      "tab_bar.background": "#000000FF",
+      "tab.inactive_background": "#000000FF",
+      "tab.active_background": "#000000FF",
+      "search.match_background": "#181818",
+      "panel.background": "#000000FF",
+      "panel.focused_border": "#FCEA4CFF",
+      "editor.foreground": "#000000FF",
+      "editor.background": "#000000FF",
+      "editor.gutter.background": "#000000FF",
+      "editor.subheader.background": "#000000FF",
+      "editor.line_number": "#ADADADFF",
+      "terminal.background": "#000000FF",
+      "error.background": "#000000FF",
+      "hint.background": "#000000FF",
+      "info.background": "#000000FF",
+      "warning.background": "#000000FF",
+      "syntax": {
+        "comment": {
+          "color": "#CC8C3CFF",
+        },
+        "comment.doc": {
+          "color": "#CC8C3CFF",
+        },
+        "keyword": {
+          "color": "#FFE542FF",
+        },
+        "property": {
+          "color": "#A1C9B2FF",
+        },
+      },
+      "panel.overlay_background": "#000000FF",
+      "panel.overlay_hover": "#000000FF",
+    },
+    "Gruber Darker - Minimal": {},
+  },
 }

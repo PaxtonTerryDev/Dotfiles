@@ -14,7 +14,19 @@
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-f": "file_finder::Toggle",
-      "ctrl-\\": "zed::OpenKeymapFile",
+    },
+  },
+  {
+    "context": "Workspace && !(vim_mode == insert) && !Terminal",
+    "bindings": {
+      "space space": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "Workspace && vim_mode == normal",
+    "bindings": {
+      "shift h": "panel::NextPanelTab",
+      "space space": "file_finder::Toggle",
     },
   },
   {
@@ -26,12 +38,10 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      // File saving
-      "space w": "workspace::Save",
-      "space W": "workspace::SaveAll",
-
-      // Formatting
-      "space f": "editor::Format",
+      // Window Splits
+      "space w v": "pane::SplitVertical",
+      "space w h": "pane::SplitHorizontal",
+      "space l f": "editor::Format",
 
       // File Finding
       "space space": "file_finder::Toggle",
@@ -44,20 +54,40 @@
 
       "ctrl-w q": "pane::CloseActiveItem",
       "space c": "pane::CloseActiveItem",
-      "space shift-c": "pane::CloseOtherItems",
+      "space b d d": "pane::CloseActiveItem",
+      "space b d l": "pane::CloseItemsToTheRight",
+      "space b d h": "pane::CloseItemsToTheLeft",
+      "space b d a": "pane::CloseAllItems",
+      "space b d o": "pane::CloseOtherItems",
+
+      // Git
+      "space t g b i": "editor::ToggleGitBlameInline",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !diffs_expanded",
+    "bindings": {
+      "space t g d": "editor::ExpandAllDiffHunks",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && diffs_expanded",
+    "bindings": {
+      "space t g d": "editor::CollapseAllDiffHunks",
     },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore",
+      "k j": "vim::NormalBefore",
     },
   },
   {
     "context": "ProjectPanel",
     "bindings": {
-      "ctrl-v": "project_panel::OpenSplitVertical",
-      "ctrl-h": "project_panel::OpenSplitHorizontal",
+      "space v": "project_panel::OpenSplitVertical",
+      "space h": "project_panel::OpenSplitHorizontal",
       "ctrl-g": "git::FileHistory",
     },
   },
