@@ -1,2 +1,8 @@
 alias lz="lazygit"
 alias z="zeditor"
+
+### SCRIPTS ###
+
+# git create worktree
+alias gcwt="$HOME/.scripts/git/create-worktree.sh"
+alias grwt="$HOME/.scripts/git/remove-worktree.sh"
