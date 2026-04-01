@@ -10,4 +10,3 @@ alias grwt="$HOME/.scripts/git/remove-worktree.sh"
 ### DOCKER ###
 
 alias dstall="$HOME/.scripts/docker/stop-all-containers.sh"
-
