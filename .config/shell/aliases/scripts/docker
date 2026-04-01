@@ -1,0 +1,4 @@
+DOCKER_SCRIPTS="$SCRIPTS/docker"
+
+alias dstall="$DOCKER_SCRIPTS/stop-all-containers.sh"
+alias dprall="$DOCKER_SCRIPTS/cleanup.sh"
