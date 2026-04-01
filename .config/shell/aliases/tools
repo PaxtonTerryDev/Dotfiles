@@ -6,3 +6,8 @@ alias z="zeditor"
 # git create worktree
 alias gcwt="$HOME/.scripts/git/create-worktree.sh"
 alias grwt="$HOME/.scripts/git/remove-worktree.sh"
+
+### DOCKER ###
+
+alias dstall="$HOME/.scripts/docker/stop-all-containers.sh"
+
