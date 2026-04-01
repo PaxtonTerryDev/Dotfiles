@@ -28,7 +28,6 @@ type: project
 
 ## Installed plugins and their keys
 - diffview.nvim: `<leader>gv` (DiffviewOpen), `<leader>gF` (DiffviewFileHistory %)
-- nvim-dap (via lazyvim.plugins.extras.dap.core): `<leader>d*` prefix — dB, db, dc, da, dC, dg, di, dj, dk, dl, do, dO, dP, dr, ds, dt, dw (dap), du, de (dapui). NOTE: `<leader>dpp` and `<leader>dph` are taken by Snacks profiler toggles (LazyVim default).
 
 **Why:** Needed to avoid silent keybinding conflicts when adding new plugins.
 **How to apply:** Cross-reference this list before proposing any keybindings for new plugins. Free <leader>g slots as of last audit: gv, gF, gw, gx, gz, gn, gm, gk, gj (verify extras not active first).

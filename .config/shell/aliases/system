@@ -1,2 +1,0 @@
-alias shs="source $HOME/.bashrc"
-alias cdwt="cd $HOME/.worktrees"

@@ -55,4 +55,7 @@ else
   echo "[warn] No .env found at $ENV_SOURCE, skipping."
 fi
 
-cd $WT_PATH
+cd "$WT_PATH"
+npm ci
+cd apps/web
+npm run launch
