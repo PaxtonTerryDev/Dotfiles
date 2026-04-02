@@ -4,7 +4,7 @@ while getopts "cvi" opt; do
   case $opt in
   c) containers=true ;;
   v) volumes=true ;;
-  i) images=false ;;
+  i) images=true ;;
   ?)
     echo "Usage: $0 [-c] [-v] [-i]" >&2
     exit 1
