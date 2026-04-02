@@ -5,12 +5,13 @@
 DOTFILES_PATH="$HOME/.config/shell"
 ALIASES_PATH="$DOTFILES_PATH/aliases"
 
+export SHELLCFG="$HOME/.config/shell"
 export SCRIPTS="$HOME/.scripts"
 
 export PATH="$HOME/.local/bin:$PATH"
 
 shopt -s globstar
-for f in "$ALIASES_PATH/**/*"; do
+for f in "$ALIASES_PATH"/**/*; do
   [ -f "$f" ] && source "$f"
 done
 
