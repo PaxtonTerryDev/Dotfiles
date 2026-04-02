@@ -28,6 +28,7 @@ type: project
 
 ## Installed plugins and their keys
 - diffview.nvim: `<leader>gv` (DiffviewOpen), `<leader>gF` (DiffviewFileHistory %)
+- nvim-dap: `<F5>` (continue), `<F10>` (step over), `<F11>` (step into), `<F23>`/Shift-F11 (step out), `<leader>db` (toggle breakpoint), `<leader>dB` (conditional breakpoint), `<leader>dr` (REPL), `<leader>dl` (run last), `<leader>dt` (UI toggle)
 
 **Why:** Needed to avoid silent keybinding conflicts when adding new plugins.
 **How to apply:** Cross-reference this list before proposing any keybindings for new plugins. Free <leader>g slots as of last audit: gv, gF, gw, gx, gz, gn, gm, gk, gj (verify extras not active first).
